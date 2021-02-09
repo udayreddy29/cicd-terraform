@@ -1,0 +1,19 @@
+{
+    "Id": "Policy1",
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::react-sample-example-csuf",
+                "arn:aws:s3:::react-sample-example-csuf/*"
+            ],
+            "Principal": "*"
+        }
+    ]
+}
